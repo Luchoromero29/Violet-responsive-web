@@ -1,0 +1,32 @@
+#menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    
+}
+
+#menu li a{
+    display: block;
+    padding: 5px;
+    margin-bottom: 7px;
+    margin-left: 20px;
+    
+}
+
+#menu li a.active{
+    color: var(--color-primary-dark);
+    background-color: rgba(232, 82, 174, 0.574);
+    color: white;
+    border-radius: 15px;
+    
+}
+
+@media only screen and (max-width: 768px){
+    #menu{
+        text-align: center;
+        margin-left: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
